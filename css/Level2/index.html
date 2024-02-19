@@ -4,8 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #bar{
+            color: rgb(56, 87, 76,0.4);
+            background-color: red;
+        }
+        main{
+            background-color: aquamarine;
+            height: 500px;
+        }
+        #product{
+            /* Add the image in the div with id product */
+            background-image:url("light-blue-denim-sdryder-jeans.webp");
+            height: 500px;
+            width: 200px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: left;
+            /*
+            now use short hand property to reduce the code
+            background : green url() no-repeat contain left; 
+             */
+        }
+    </style>
 </head>
 <body>
-    <!-- Hello -->
+    <!-- Here is the Level 2 practise set -->
+    <!-- Change the color of the main content -->
+    <header></header>
+    <main>
+        <div id="product"></div>
+    </main>
+    <footer></footer>
+    <!-- Create a div bar with text and background color with opacity -->
+    <div id="bar">Hello Div</div>
 </body>
 </html>
