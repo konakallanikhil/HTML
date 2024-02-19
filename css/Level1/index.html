@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <link rel="stylesheet" href="index.css">
+    <style>
+        /*this is internal css for styling*/
+        #heading{
+            color: blueviolet;
+        } 
+        #idSelector{
+            color: black;
+        }     
+        .classSelector{
+            color: blue;
+        } 
+        p{
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+    <!-- Create a heading and set the text color to red -->
+    <h1 style="color: red;">Hello Welcome to CSS Full course from beginner to advance</h1>
+    <!-- Create a div with id #heading , include CSS using all 3 ways line , style tag and external and observe priority -->
+    <!-- inline css> internal css > external css these are preferences for style tag importance-->
+    <div id="heading1" style="color: aqua;">Here is the Paragraph</div>
+    <hr>
+    <!-- Create a div,paragraph and heading and use id selector , element selector and class selector -->
+    <div id="idSelector">div</div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, quibusdam.</p>
+    <h1 class="classSelector">hii</h1>
+    <hr>
+    <!-- Create two divs with id first and second and define color for both using group selector-->
+    <div id="First">first</div>
+    <div id="Second">second</div>
+</body>
+</html>
