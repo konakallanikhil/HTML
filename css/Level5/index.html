@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            margin: 5px;
+            background-color: olive;
+            /* 
+            Here we have 3 different property for display such as inline , block , inline-block
+            if we use inline property for any block level elements size will auto matically off as it is not supported so in this case we can use inline-block
+             */
+             display: inline-block;
+             /* This is remove elemts from the screen */
+        }
+        #box2{
+            display: none;
+        }
+        .divbox{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            margin: 5px;
+        }
+        #div1{
+            background-color: red;
+            position: static;
+        }
+        #div2{
+            background-color: blue;
+            position: relative;
+            top: 10px;
+            left: 25px;
+        }
+        #div3{
+            background-color: green;
+            position: absolute;
+        }
+        #div4{
+            background-color: palevioletred;
+            position: fixed;
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        1. display property
+        2. Responsive website
+        3. Relative Units are %,px,re,em,vh,vw
+        4. Position Property
+        5. Semantic Tags
+    -->
+    <div id="box1" class="box">Box 1</div>
+    <div id="box2" class="box">Box 2</div>
+    <div id="box3" class="box">Box 3</div>
+    <hr>
+    <!-- Responsiv website can identity using inspect in browser for testing-->
+    <!-- Here we learn about position in posotions we have 4 types static , fixed , relative , absolute-->
+    <div id="div1" class="divbox">First Div</div>
+    <div id="div2" class="divbox">Second Div</div>
+    <div id="div3" class="divbox">Thrid Div</div>
+    <div id="div4" class="divbox">Fourth Div</div>
+</body>
+</html>
