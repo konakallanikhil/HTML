@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #boxsize{
+            height: 500px;
+            width: 500px;
+            background-color: blanchedalmond;
+        }
+        #button{
+            padding: 10px;
+            margin: 15px;
+        }
+        #button{
+            margin: 100px;
+            border: 2px solid red;
+            padding: 10px 15px;
+            height: 70px;
+            width: 70px;
+            border-radius: 100px;
+        }
+        #first{
+            height: 100px;
+            width: 100px;
+            padding: 5px;
+            margin: 5px;
+            box-sizing: border-box;
+            background-color: blue;
+        }
+        #second{
+            height: 100px;
+            width: 100px;
+            padding: 5px;
+            margin: 5px;
+            box-sizing: content-box;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- Create a div with height and width 200 px and observe different values in the box mosel by inspecting -->
+    <div id="boxsize"></div>
+    <!-- Create a button and give 10px padding to top and bottom and 15 px on the sides -->
+    <!-- Add 100 px margin to the button on all sides -->
+        <!-- Add dotter border with color red and so much that the button become circle-->
+    <button id="button">Click Me</button>
+    <!-- Create two boxes with different box-sizing values and observe changes in box model-->
+    <div id="first">Hello</div>
+    <div id="second">Hello</div>
+</body>
+</html>
