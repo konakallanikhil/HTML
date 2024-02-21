@@ -13,13 +13,14 @@ header{
     border-bottom: 1px solid #b6b1b1;
 }
 .myntra_home{
-    height: 36px;
+    width: 60px;
+    height: 42px;
 }
 .log_container{
     margin-left: 4%;
 }
 .action_bar{
-    margin-right: 4%;
+    margin-right: 2%;
 }
 .nav_bar{
     display: flex;
@@ -72,6 +73,10 @@ header{
     min-width: 200px;
     justify-content: space-evenly;
 }
+.action_name{
+    font-size: 12px;
+    font-weight: 700;
+}
 .action_container{
     display: flex;
     flex-direction: column;
@@ -98,4 +103,47 @@ header{
 }
 .sale_item{
     padding: 0 5px 40px 45px;
+}
+.footer_container{
+    padding: 30 0px 40px 0px;
+    display: flex;
+    width: 60%;
+    justify-content:space-evenly;
+    margin-left:350px;
+}
+.footer_column{
+    display: flex;
+    flex-direction: column;
+}
+.footer_column a{
+    text-decoration: none;
+    color:#696e79 ;
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+.footer_column h3{
+    font-size: 12px;
+    font-weight: 700;
+    color: #282c3f;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.footer_column img{
+    padding-top: 5px;
+}
+.footer_description{
+    padding: 30 0px 40px 0px;
+    width: 60%;
+    margin-left:405px;
+}
+.footer_paragraph h3{
+    font-size: 12px;
+    font-weight: 700;
+    color: #282c3f;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.footer_paragraph p{
+    color:#696e79 ;
+    font-size: 14px;
 }
