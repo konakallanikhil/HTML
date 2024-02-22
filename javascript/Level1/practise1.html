@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #id_button{
+            color: red;
+            background-color: black;
+        }
+        .class_button{
+            color: black;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <main>
+        <button>Click</button>
+        <button id="id_button">Id Button</button>
+        <button class="class_button"> Class Button</button>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, doloribus.</p>
+        <button id="button1" onclick="alert('Add to bag')"></button>
+        <button class="button2" onclick="alert('❤️ WISHLIST')">❤️ WISHLIST</button>
+    </main>
+    <footer></footer>
+    <script>
+        const button1 = document.getElementById('button1');
+        button1.innerHTML = 'Add to Bag';
+        button1.style.backgroundColor = 'lightgreen';
+        button1.style.border = 'none';
+        button1.style.padding = '5px 20px';
+        button1.style.borderRadius = '20px';
+        const button2 = document.getElementsByClassName('button2')[0];
+        button2.style.borderRadius = '10px'
+        button2.style.padding = '5px 40px';
+        alert(`Welcome Buddy`);
+
+    </script>
+</body>
+</html>
