@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let product = {
+            name : 'jeans',
+            size : 'S',
+            fit : 'slimfit',
+            'delivery-time' : 'Same Day',
+        }
+        let copy  = product;
+        console.log(product);
+        copy.size = 'M';
+        console.log(product);
+        copy.fit = 'fit';
+        console.log(product);
+        console.log(product['delivery-time'])
+
+        let obj = {
+            message :'good job',
+            status : 'complete',
+        }
+        console.log(obj);
+        let {message} = obj;
+        console.log(message);
+        let {status} = obj;
+        console.log(status);
+
+        function isIdenticalProduct(){
+            let ans = (product == copy)
+            if(ans == true){
+                console.log('Both are same');
+            }
+            else{
+                console.log('Both are different');
+            }
+        }
+        isIdenticalProduct();
+    </script>
+</body>
+</html>
