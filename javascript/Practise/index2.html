@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function evenOdd(number){
+            let result = ((number%2) == 0) ? console.log(`Give no ${number} is even`) : console.log(`Give no ${number} is odd`)
+            return result;
+        }
+        evenOdd(36);
+
+        function greater(number1,number2){
+            console.log(`given no are ${number1} ${number2}`)
+            let result = (number1 > number2) ? console.log(`Give no1 ${number1} is greater`) : console.log(`Give no2 ${number2} is greater`)
+            return result;
+        }
+        greater(36,65);
+
+        function convertor(number){
+            let celsius = number;
+            let Fahrenheit = (9/5) * celsius + 32;
+            return Fahrenheit;
+        }
+        let output = convertor(32);
+        console.log(output);
+    </script>
+</body>
+</html>

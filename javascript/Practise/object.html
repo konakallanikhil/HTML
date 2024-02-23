@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let product  = {
+            id : 101,
+            name : 'vishnu',
+            gender : 'M',
+            age : 26
+        };
+        console.log(product);
+        /*Retriving Method1*/
+        console.log(product.id);
+        console.log(product.name);
+        console.log(product.gender);
+        /*Retriving Method2*/
+        console.log(product['id']);
+        console.log(product['name']);
+        console.log(product['gender']);
+        /*DELETE THE ITEM IN OBJECT*/
+        delete product.gender;
+        console.log(product);
+    </script>
+</body>
+</html>

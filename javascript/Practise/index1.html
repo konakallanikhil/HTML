@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* This is function with parameters*/
+        function add(x,y){
+            let c = x + y;
+            return c;
+        }
+        let answer = add(2,3);
+        console.log(answer);
+
+        /* This is function to understand default parameter*/
+        /*Without default if we give empty in arguments then it givv you undefine value*/
+        function def(name){
+            console.log(`Namaste ${name} bhai`);
+        }
+        def('nikhil');
+        /* To avoid the above one we use default parameters*/
+        function defi(name = 'Shiv'){
+            console.log(`Namaste ${name} bhai`);
+        }
+        defi();
+    </script>
+</body>
+</html>
