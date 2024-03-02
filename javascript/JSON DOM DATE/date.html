@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="my_div">This is the div</div>
+</body>
+<script>
+    //  let mydate = new Date();
+    //  console.log(mydate)
+    //  console.log(mydate.getDay())
+    //  console.log(mydate.getFullYear())
+    //  console.log(mydate.getHours())
+    //  console.log(mydate.getMilliseconds())
+    //  console.log(mydate.getMonth())
+    let button = document.createElement('Button');
+    button.innerHTML = 'Save';
+    document.querySelector('.my_div').appendChild(button);
+    document.querySelector('.my_div').removeChild(button);
+</script>
+</html>

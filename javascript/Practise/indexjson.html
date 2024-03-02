@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn_score" onclick="flow();">0</button>
+</body>
+<script>
+    // let date = new Date();
+    // console.log(date.getHours());
+    // if(date.getHours() >= 3 && date.getHours() <= 12){
+    //     console.log(`Good Morning Nikhil`);
+    // }
+    // else if(date.getHours() > 12 && date.getHours() <= 18){
+    //     console.log(`Good Evening Nikhil`);
+    // }
+    // else if(date.getHours() > 18){
+    //     console.log(`Good Night Nikhil`);
+    // }
+    let count = localStorage.getItem('count') || 0;
+    let button;
+    function flow(){
+        count =  count + 1;
+        localStorage.setItem('count',count);
+        update();
+    }
+    function update(){
+       button = document.getElementById('btn_score');
+       button.style.height = '100px';
+       button.style.width = '100px';
+       button.style.fontSize = 'large';
+        if((count%2) == 0){
+        button.style.backgroundColor = 'red';
+       }
+       else{
+        button.style.backgroundColor = 'blue';
+      }
+      button.innerHTML = count;
+    }
+    update();
+</script>
+</html>
